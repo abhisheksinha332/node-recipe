@@ -90,49 +90,7 @@ const Form = () => {
   const handleClose = () => setOpen(false);
     return (
         <Paper>
-            {/* <form autoComplete="off" noValidate onSubmit={handleSubmit}>
-                <Typography variant="h6">Add your recipe</Typography>
-                <TextField 
-                 name="author"
-                 variant="outlined" 
-                 label="Author"  
-                 fullWidth 
-                 value={recipeData.author}
-                 onChange={(e)=> setRecipeData({...recipeData,author: e.target.value})}
-                />
-                <TextField 
-                 name="title"
-                 variant="outlined" 
-                 label="Title"  
-                 fullWidth 
-                 value={recipeData.title}
-                 onChange={(e)=> setRecipeData({...recipeData,title: e.target.value})}
-                />
-                <TextField 
-                 name="recipe"
-                 variant="outlined" 
-                 label="Recipe"  
-                 fullWidth 
-                 value={recipeData.recipe}
-                 onChange={(e)=> setRecipeData({...recipeData,recipe: e.target.value})}
-                />
-                <TextField 
-                 name="ingredient"
-                 variant="outlined" 
-                 label="Ingreadient"  
-                 fullWidth 
-                 value={recipeData.ingredient}
-                 onChange={(e)=> setRecipeData({...recipeData,ingredient: e.target.value.split(',')})}
-                />
-                <FileBase 
-                 type="file"
-                 multiple={false}
-                 onDone= {({base64})=> setRecipeData({...recipeData, picture:base64})}
-                />
-                <Button variant="contained" color="primary" size="large" fullWidth type="submit">Submit</Button>
-                <Button variant="contained" color="secondary" size="small" fullWidth onClick={clear}>Clear</Button>
-            </form> */}
-            {/* <Button onClick={handleOpen}>Open modal</Button> */}
+           
       <Modal
         open={open}
         onClose={handleClose}
@@ -206,17 +164,7 @@ const Form = () => {
                  value={recipeData.title}
                  onChange={(e)=> setRecipeData({...recipeData,title: e.target.value})}
                 />
-                 <TextField 
-                 name="recipe"
-                 variant="outlined"
-                 margin="normal"
-                 required 
-                 label="Recipe"  
-                 fullWidth 
-                 value={recipeData.recipe}
-                 onChange={(e)=> setRecipeData({...recipeData,recipe: e.target.value})}
-                />
-               <TextField 
+                <TextField 
                  name="ingredient"
                  variant="outlined"
                  margin="normal"
@@ -226,6 +174,18 @@ const Form = () => {
                  value={recipeData.ingredient}
                  onChange={(e)=> setRecipeData({...recipeData,ingredient: e.target.value.split(',')})}
                 />
+                 <TextField 
+                 name="recipe"
+                 variant="outlined"
+                 margin="normal"
+                 multiline
+                 required 
+                 label="Recipe"  
+                 fullWidth 
+                 value={recipeData.recipe}
+                 onChange={(e)=> setRecipeData({...recipeData,recipe: e.target.value})}
+                />
+               
                 <FileBase 
                  type="file"
                  multiple={false}

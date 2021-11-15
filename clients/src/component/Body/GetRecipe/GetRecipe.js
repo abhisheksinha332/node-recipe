@@ -46,10 +46,10 @@ const GetRecipe = () => {
     const [filter, setFilter] = useState([])
     const recipes = useSelector((state)=>state.recipes)
     const inputHandler = (e) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         let keyword = e.target.value
         var filtered = recipes.filter((item)=>{
-            return item.author.indexOf(keyword) > -1
+            return item.title.indexOf(keyword) > -1
         })
 
         console.log(filtered);

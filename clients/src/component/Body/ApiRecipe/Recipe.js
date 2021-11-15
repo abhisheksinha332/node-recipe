@@ -30,7 +30,6 @@ const Recipe = ({title, source, image, ingredients, url,food}) => {
                 ))}
             </ol>
             </div>
-                {/* <Typography variant="h6" className={classes.recipe} gutterBottom>{recipe.recipe}</Typography> */}
             </CardContent>
             </CardActionArea>
            

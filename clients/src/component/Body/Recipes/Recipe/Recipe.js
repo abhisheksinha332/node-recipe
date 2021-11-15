@@ -58,6 +58,8 @@ const Recipe = ({recipe}) => {
             <CardMedia className={classes.media} image={recipe.picture} title={Recipe.title} />
             <div className={classes.back}> <CardContent>
             <div className={classes.ing}>
+                <h3>Ingredients:</h3>
+                <br/>
                {recipe.ingredient.map((ing,index)=>(<h6 key={index}>{`${++num}. ${ing} `} </h6>))}
             </div>
             </CardContent></div>
