@@ -15,6 +15,7 @@ function ApiRecipe() {
 
   useEffect( () => {
     getRecipes();
+    // eslint-disable-next-line
   },[query]);
 // eslint-disable-next-line
   

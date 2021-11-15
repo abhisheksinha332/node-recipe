@@ -15,18 +15,18 @@ export default makeStyles({
     fullHeightCard:{
         height:'100%',
     },
-    card: {
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'space-around',
-        borderRadius:'15px',
-        height:'100%',
-        position:'relative',
-        minWidth: '40%',
-        maxWidth: '42%',
-        alignTtems: 'center',
-        margin: '20px'
-    },
+    // card: {
+    //     display:'flex',
+    //     flexDirection:'column',
+    //     justifyContent:'space-around',
+    //     borderRadius:'15px',
+    //     height:'100%',
+    //     position:'relative',
+    //     minWidth: '40%',
+    //     maxWidth: '42%',
+    //     alignTtems: 'center',
+    //     margin: '20px'
+    // },
     cards: {
         display:'flex',
         flexDirection:'column',

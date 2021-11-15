@@ -1,6 +1,6 @@
 import React from 'react'
-import  {useSelector} from 'react-redux'
-import { Grid, CircularProgress, LinearProgress, TextField } from '@material-ui/core'
+
+import { Grid, LinearProgress} from '@material-ui/core'
 import Recipe from './Recipe/Recipe'
 
 const Recipes = ({recipes}) => {

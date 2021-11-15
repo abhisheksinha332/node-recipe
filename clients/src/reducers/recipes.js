@@ -1,5 +1,5 @@
 export default  (recipes = [], action) =>{
-    
+  
    switch(action.type){
        case 'FETCH_ALL':
             return action.payload
@@ -14,4 +14,3 @@ export default  (recipes = [], action) =>{
     
    }
 }
-// eslint-disable-next-line

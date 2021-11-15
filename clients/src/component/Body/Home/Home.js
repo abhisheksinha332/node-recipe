@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import * as s from './Home.styles'
 import back from './image/5393830.jpg'
 const Home = () => {
     return (

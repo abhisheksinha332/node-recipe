@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Card,Paper, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
+import React from 'react';
+import { Card,Paper, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
 
 import useStyles from './styles'
 const Recipe = ({title, source, image, ingredients, url,food}) => {
